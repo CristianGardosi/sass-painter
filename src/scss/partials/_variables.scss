@@ -1,0 +1,79 @@
+// *LAYOUT COLORS* \\
+// Basic
+$white: #fff;
+$black: #000;
+// Typho, backgrounds and icons used colors
+$darkgrey: #101010;
+$lightgrey: #939393;
+$blue: #009cff;
+
+
+// *TYPHOGRAPHY* \\
+$basic-text: 1.2rem;
+$smaller-size-text: 1rem;
+$section-title: 2.8rem;
+
+// *Margin & padding* \\
+$marginhalf : .5rem;
+$margin1 : 1rem;
+$margin2 : 2rem;
+$margin3 : 3rem;
+$margin5 : 5rem;
+$margin8 : 8rem;
+
+$paddinghalf : .5rem;
+$padding1 : 1rem;
+$padding2 : 2rem;
+$padding3 : 3rem;
+$padding5 : 5rem;
+$padding8 : 8rem;
+
+
+// *FLEX MIXIN* \\
+@mixin flexRow($type) {
+    display: flex;
+
+    @if $type == 'all-centered' {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @else if $type == 'start' {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    @else if $type == 'end' {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @else if $type == 'space-between' {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@mixin flexCol($type) {
+    display: flex;
+
+    @if $type == 'all-centered' {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @else if $type == 'start' {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @else if $type == 'end' {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    @else if $type == 'space-between' {
+        justify-content: center;
+        align-items: space-between;
+    }
+}

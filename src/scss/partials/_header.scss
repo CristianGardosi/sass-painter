@@ -1,0 +1,49 @@
+// !HEADER STYLES 
+
+.contacts-and-language {
+    background: $darkgrey;
+    padding: $padding1 $padding8;
+
+    .contact-list {
+        @include flexRow('end');
+
+        &-item {
+            list-style: none;
+            font-size: $smaller-size-text;
+            margin: 0 $padding1;
+
+            .contact-link {
+                text-decoration: none;
+                color: $lightgrey;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.logo-and-links {
+    background: $darkgrey;
+    padding: $padding1 $padding8;
+
+    &-list {
+        @include flexRow('all-centered');
+
+        .logo-and-links-item {
+            list-style: none;
+            margin: 0 $padding1;
+
+            & a {
+                color: $white;
+                text-decoration: none;
+
+                & i {
+                    font-size: $smaller-size-text;
+                    color: $lightgrey;
+                }
+            }
+        }
+    }
+}

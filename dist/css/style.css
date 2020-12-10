@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.2rem;
+}
+
+i {
+  color: #009cff;
+}
+
+.contacts-and-language {
+  background: #101010;
+  padding: 1rem 8rem;
+}
+
+.contacts-and-language .contact-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contacts-and-language .contact-list-item {
+  list-style: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+.contacts-and-language .contact-list-item .contact-link {
+  text-decoration: none;
+  color: #939393;
+}
+
+.contacts-and-language .contact-list-item .contact-link:hover {
+  color: #fff;
+}
+
+.logo-and-links {
+  background: #101010;
+  padding: 1rem 8rem;
+}
+
+.logo-and-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-and-links-list .logo-and-links-item {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.logo-and-links-list .logo-and-links-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-and-links-list .logo-and-links-item a i {
+  font-size: 1rem;
+  color: #939393;
+}
+
