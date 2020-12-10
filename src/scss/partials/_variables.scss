@@ -11,6 +11,7 @@ $blue: #009cff;
 // *TYPHOGRAPHY* \\
 $basic-text: 1.2rem;
 $smaller-size-text: 1rem;
+$bigger-size-test: 1.8rem;
 $section-title: 2.8rem;
 
 // *Margin & padding* \\
@@ -75,5 +76,27 @@ $padding8 : 8rem;
     @else if $type == 'space-between' {
         justify-content: center;
         align-items: space-between;
+    }
+}
+
+
+// *ABSOLUTE MIXIN* \\ 
+@mixin absolute($type: 'both') {
+    position: absolute;
+
+    @if $type == 'vertical' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @else if $type == 'horiz' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $type == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

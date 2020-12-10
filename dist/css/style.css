@@ -17,24 +17,20 @@ i {
   background: #101010;
   padding: 1rem 8rem;
 }
-
 .contacts-and-language .contact-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 .contacts-and-language .contact-list-item {
   list-style: none;
   font-size: 1rem;
   margin: 0 1rem;
 }
-
 .contacts-and-language .contact-list-item .contact-link {
   text-decoration: none;
   color: #939393;
 }
-
 .contacts-and-language .contact-list-item .contact-link:hover {
   color: #fff;
 }
@@ -43,29 +39,105 @@ i {
   background: #101010;
   padding: 1rem 8rem;
 }
-
 .logo-and-links-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .logo-and-links-list .logo-and-links-item {
   list-style: none;
   margin: 0 1rem;
 }
-
 .logo-and-links-list .logo-and-links-item a {
   color: #fff;
   text-decoration: none;
 }
-
 .logo-and-links-list .logo-and-links-item a i {
   font-size: 1rem;
   color: #939393;
 }
 
 .monster-container {
-  background-image: url("");
+  position: relative;
+  height: 500px;
+  background-image: url("../../img/hero.jpg");
+  background-size: cover;
 }
-
+.monster-container .download-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 28%;
+  color: #fff;
+}
+.monster-container .download-left p {
+  font-weight: bold;
+  padding: 2rem 0;
+}
+.monster-container .download-left .download-items {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+.monster-container .download-left .download-items i {
+  font-size: 1rem;
+  color: #939393;
+}
+.monster-container .download-left .download {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  background: #666666;
+  color: #fff;
+  cursor: pointer;
+}
+.monster-container .download-left .download:hover {
+  background: #555555;
+}
+.monster-container .black-box-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8%;
+  padding: 1rem;
+  height: 90%;
+  width: 400px;
+  background: #000;
+  color: #fff;
+}
+.monster-container .black-box-right h2 {
+  margin-top: 2rem;
+}
+.monster-container .black-box-right p {
+  color: darkgrey;
+}
+.monster-container .black-box-right .buy-now {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  background: #009cff;
+  color: #fff;
+  cursor: pointer;
+}
+.monster-container .black-box-right a img {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.monster-container .black-box-right .white-box-inside-black {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  width: 90%;
+  padding: 1rem;
+  color: #101010;
+  background: #fff;
+}
+.monster-container .black-box-right .white-box-inside-black a {
+  display: block;
+  text-decoration: none;
+  color: #009cff;
+}

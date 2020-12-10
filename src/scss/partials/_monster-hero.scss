@@ -1,3 +1,93 @@
 .monster-container {
-    background-image: url('../../img/hero1.jpg')
+    position: relative;
+    height: 500px;
+    background-image: url('../../img/hero.jpg');
+    background-size: cover;
+
+    .download-left {
+        @include absolute('vertical');
+        left: 28%;   
+        color: $white;
+
+        & p {
+            font-weight: bold;
+            padding: $padding2 0;
+        }
+    
+        .download-items {
+            font-size: $smaller-size-text;
+            padding: $paddinghalf 0;
+            list-style: none;
+
+            & i {
+            font-size: $smaller-size-text;
+            color: $lightgrey;
+            }
+        }
+
+        .download {
+            font-size: $basic-text;
+            margin-top: $margin2;
+            padding: $padding1 $padding3;
+            border: none;
+            background: #666666;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                background: #555555;
+            }
+        }
+    }
+
+    .black-box-right {
+        @include absolute('vertical');
+        right: 8%;
+        padding: $padding1;
+        height: 90%;
+        width: 400px;
+        background: $black;
+        color: $white;
+
+        & h2 {
+            margin-top: $margin2;
+        }
+
+        & p {
+            color: darkgrey;
+        }
+
+        & .buy-now {
+            font-size: $basic-text;
+            margin-top: $margin1;
+            padding: $paddinghalf $padding2;
+            border: none;
+            background: $blue;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        & a img {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .white-box-inside-black {
+            @include absolute('horiz');
+            bottom: 20%;
+            width: 90%;
+            padding: $padding1;
+            color: $darkgrey;
+            background:$white;
+
+            & a {
+                display: block;
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+        
+    }
 }
+
