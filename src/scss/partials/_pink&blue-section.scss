@@ -8,7 +8,7 @@
 
     .pink-blue-text {
         @include absolute('horiz');
-        padding-top: $padding5;
+        padding-top: $padding3;
         color: $white;
 
         & p {
@@ -25,6 +25,6 @@
     .tablet-img img {
         @include absolute('horiz');
         bottom: 0;
-        width: 60%;
+        width: 70%;
     }
 }

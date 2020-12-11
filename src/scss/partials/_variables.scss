@@ -58,6 +58,7 @@ $padding8 : 8rem;
 
 @mixin flexCol($type) {
     display: flex;
+    flex-direction: column;
 
     @if $type == 'all-centered' {
         justify-content: center;

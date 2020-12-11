@@ -1,21 +1,7 @@
 .eagle-section-container {
-    position: relative;
-    height: 130vh;
+    @include flexCol('all-centered');
     text-align: center;
-
-    .eagle-section-text {
-        @include absolute('horiz');
-        padding-top: $padding5;
-        color: $darkgrey;
-
-        & p {
-            padding: $padding2;
-        }
-    }
-
-    .eagle-img img {
-        @include absolute('horiz');
-        bottom: 5%;
-        width: 65%;
-    }
+    max-width: 1000px;
+    padding-top: $padding3;
+    margin: 0 auto;
 }
