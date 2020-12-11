@@ -1,0 +1,30 @@
+.pink-blue-container {
+    position: relative;
+    height: 120vh;
+    background-image: url('../../img/bluepink.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+
+    .pink-blue-text {
+        @include absolute('horiz');
+        padding-top: $padding5;
+        color: $white;
+
+        & p {
+            padding: $padding2;
+        }
+
+        & small i {
+            padding-right: $paddinghalf;
+            font-size: $basic-text;
+            color: $grey;
+        }
+    }
+
+    .tablet-img img {
+        @include absolute('horiz');
+        bottom: 0;
+        width: 60%;
+    }
+}

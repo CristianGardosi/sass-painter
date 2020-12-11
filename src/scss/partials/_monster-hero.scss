@@ -59,6 +59,7 @@
 
         & .buy-now {
             font-size: $basic-text;
+            text-transform: uppercase;
             margin-top: $margin1;
             padding: $paddinghalf $padding2;
             border: none;
@@ -81,13 +82,16 @@
             color: $darkgrey;
             background:$white;
 
+            & h3 {
+                text-transform: uppercase
+            }
+
             & a {
                 display: block;
                 text-decoration: none;
                 color: $blue;
             }
-        }
-        
+        }        
     }
 }
 

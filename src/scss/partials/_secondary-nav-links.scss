@@ -1,0 +1,29 @@
+.secondary-nav-container {
+    background: $lightgrey;
+
+    .secondary-nav-list {
+        @include flexRow('all-centered');
+        padding: $padding1;
+
+        .secondary-nav-item {
+            padding: 0 $padding1;
+            list-style: none;
+            
+            & a {
+                color: $darkgrey;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            .secondary-blue {
+                background: $blue;
+                color: $white;
+                padding: $padding1;
+            }
+        }
+    }
+}

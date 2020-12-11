@@ -29,7 +29,7 @@ i {
 }
 .contacts-and-language .contact-list-item .contact-link {
   text-decoration: none;
-  color: #939393;
+  color: #e6e6e6;
 }
 .contacts-and-language .contact-list-item .contact-link:hover {
   color: #fff;
@@ -54,7 +54,7 @@ i {
 }
 .logo-and-links-list .logo-and-links-item a i {
   font-size: 1rem;
-  color: #939393;
+  color: #e6e6e6;
 }
 
 .monster-container {
@@ -81,7 +81,7 @@ i {
 }
 .monster-container .download-left .download-items i {
   font-size: 1rem;
-  color: #939393;
+  color: #e6e6e6;
 }
 .monster-container .download-left .download {
   font-size: 1.2rem;
@@ -114,6 +114,7 @@ i {
 }
 .monster-container .black-box-right .buy-now {
   font-size: 1.2rem;
+  text-transform: uppercase;
   margin-top: 1rem;
   padding: 0.5rem 2rem;
   border: none;
@@ -136,8 +137,69 @@ i {
   color: #101010;
   background: #fff;
 }
+.monster-container .black-box-right .white-box-inside-black h3 {
+  text-transform: uppercase;
+}
 .monster-container .black-box-right .white-box-inside-black a {
   display: block;
   text-decoration: none;
   color: #009cff;
+}
+
+.secondary-nav-container {
+  background: #e6e6e6;
+}
+.secondary-nav-container .secondary-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.secondary-nav-container .secondary-nav-list .secondary-nav-item {
+  padding: 0 1rem;
+  list-style: none;
+}
+.secondary-nav-container .secondary-nav-list .secondary-nav-item a {
+  color: #101010;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.secondary-nav-container .secondary-nav-list .secondary-nav-item a:hover {
+  color: #000;
+}
+.secondary-nav-container .secondary-nav-list .secondary-nav-item .secondary-blue {
+  background: #009cff;
+  color: #fff;
+  padding: 1rem;
+}
+
+.pink-blue-container {
+  position: relative;
+  height: 120vh;
+  background-image: url("../../img/bluepink.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.pink-blue-container .pink-blue-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 5rem;
+  color: #fff;
+}
+.pink-blue-container .pink-blue-text p {
+  padding: 2rem;
+}
+.pink-blue-container .pink-blue-text small i {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #939393;
+}
+.pink-blue-container .tablet-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60%;
 }
