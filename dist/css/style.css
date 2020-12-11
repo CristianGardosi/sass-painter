@@ -203,3 +203,26 @@ i {
   bottom: 0;
   width: 60%;
 }
+
+.eagle-section-container {
+  position: relative;
+  height: 130vh;
+  text-align: center;
+}
+.eagle-section-container .eagle-section-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 5rem;
+  color: #101010;
+}
+.eagle-section-container .eagle-section-text p {
+  padding: 2rem;
+}
+.eagle-section-container .eagle-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  width: 65%;
+}

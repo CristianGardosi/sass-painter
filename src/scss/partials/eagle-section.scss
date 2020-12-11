@@ -1,0 +1,21 @@
+.eagle-section-container {
+    position: relative;
+    height: 130vh;
+    text-align: center;
+
+    .eagle-section-text {
+        @include absolute('horiz');
+        padding-top: $padding5;
+        color: $darkgrey;
+
+        & p {
+            padding: $padding2;
+        }
+    }
+
+    .eagle-img img {
+        @include absolute('horiz');
+        bottom: 5%;
+        width: 65%;
+    }
+}
